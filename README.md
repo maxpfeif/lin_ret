@@ -8,13 +8,9 @@ input argument, with additional aruments to specify filter and plot parameters.
 lin_ret was designed around analyzing Saleae Logic output files, and contains a .csv conversion script, 
 logic_lin, which conerts the rather unweildy .csv output from Logic to the "TIME, PID, DATA" format. 
 
-To process Saleae Logic logs, simply setup the LIN analyzer to decode your bus, making sure that in Analyzer Settings
-the Display Radix setting is set to Hex,take a log and save the output using the 'export search results' command on 
-the Decoded Protocols menu. 
+To process Saleae Logic logs, simply setup the LIN analyzer to decode your bus, making sure that the Display Radix setting is set to Hex in Analyzer Settings, take a log and save the output using the 'export search results' command on the Decoded Protocols menu. 
 
-The resulting .csv file can be converted by calling ```
-python logic_lin.py example_lin_log.csv 
-```
+The resulting .csv file can be converted by calling ```python logic_lin.py example_lin_log.csv ```
 
 Which will produce an output.csv file with "lin_" appended to the front of the input file argument, in our case example_lin_log.csv
 
